@@ -74,9 +74,6 @@
                       <a class="navbar-item" href="https://skyworkai.github.io/skyreels-a2.github.io/">
                           SkyReels-A2
                       </a>
-                       <a class="navbar-item" href="https://skyworkai.github.io/skyreels-a1.github.io/">
-                          SkyReels-A1
-                      </a>
                       <a class="navbar-item" href="https://skyworkai.github.io/skyreels-audio.github.io/">
                           SkyReels-Audio
                       </a>
@@ -177,11 +174,10 @@
   <div class="container is-max-desktop">
     <br>
     <h2 class="title is-3">Overview</h2>
-    
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls muted loop  width="1080px">
         <!-- Your video here -->
-        <source src="static/videos/demo.mp4"
+        <source src="static/videos/demo.mp4" 
         type="video/mp4">
       </video>
       <!-- <h2 class="subtitle has-text-centered">
@@ -198,10 +194,11 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">TL;DR</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce SkyReels-A3, an end-to-end multimodality-conditioned framework for synthesizing high-fidelity and temporally coherent human videos. Building on pretrained video diffusion transformers, our framework enables long-form video generation with diverse and controllable conditioning via multimodal inputs. It accepts image inputs of any aspect ratio – including portraits, half-body, or full-body shots – delivering highly realistic and superior quality results across diverse scenarios. Comprehensive benchmarks demonstrate that SkyReels-A3 excels in lip-sync accuracy, identity consistency, and realistic facial dynamics, particularly under complex and challenging conditions.
+            We introduce SkyReels-A3, an end-to-end multimodality-conditioned framework for synthesizing high-fidelity and temporally coherent human videos. Building on pretrained video diffusion transformers, our framework enables long-form video generation with diverse and controllable conditioning via multimodal inputs. It accepts image inputs of any aspect ratio – including portraits, half-body, or full-body shots – delivering highly realistic and superior quality results across diverse scenarios. 
+            We employ a learning-based interpolation strategy to support minute-level video generation, while introducing reinforcement learning to enhance inter-action naturalness.
+            Comprehensive benchmarks demonstrate that SkyReels-A3 excels in lip-sync accuracy, identity consistency, and realistic facial dynamics, particularly under complex and challenging conditions.
           </p>
         </div>
       </div>
@@ -290,7 +287,7 @@
         <div>
           <td colspan="3"><img src="static/images/framework.png" alt="" width="1000" /></td>
         </div>
-      <p>Overview of SkyReels-A3. </p>
+      <p style="text-align: center;"> Architecture of SkyReels-A3. </p>
       </div>
         </div>
       </div>
@@ -298,6 +295,8 @@
   </div>
 </section>
 <!--End paper poster -->
+
+
 
 <section class="hero is-small"></section>
   <div class="hero-body">
@@ -309,17 +308,42 @@
           <div class="content has-text-justified" align="center">
             <div id="results-carousel" class="carousel results-carousel" align="center">
               <div class="item item-video11">
-                <video preload="auto"poster="" id="video11" autoplay controls muted loop width="1080px">
+                <video preload="auto"poster="" id="video11" autoplay controls muted loop width="480px">
                   <!-- Your video preload="auto"file here -->
                   <source src="static/videos/shopping/1.mp4"
                   type="video/mp4">
                 </video>
               </div>
+              <div class="item item-video12">
+                <video preload="auto"poster="" id="video12" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/2.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video13">
+                <video preload="auto"poster="" id="video13" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/3.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video14">
+                <video preload="auto"poster="" id="video14" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/4.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video15">
+                <video preload="auto"poster="" id="video15" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/5.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
             </div>
-
           </div>
-          <p style="text-align: left; max-width: 1024px; margin-left: 100px;">Given a portrait image, video, or text along with audio input, SkyReels-A3 can generate and edit portraits with strong identity consistency, expressive facial and natural body dynamics.</p>
-    
         </div>
       </div>
   </div>
@@ -327,24 +351,115 @@
 </section>
 
 
+
+
 <section class="hero is-small"></section>
   <div class="hero-body">
     <!-- <div class="container is-max-desktop"> -->
       <div class="columns is-centered has-text-centered">
         <div class="column custom-width">
-        <h3 class="title is-5">Presentation</h3>
+          <h3 class="title is-5">Presentation</h3>
           <div class="content has-text-justified" align="center">
             <div id="results-carousel" class="carousel results-carousel" align="center">
-              <div class="item item-video1">
-                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="1080px">
+              <div class="item item-video11">
+                <video preload="auto"poster="" id="video11" autoplay controls muted loop width="480px">
                   <!-- Your video preload="auto"file here -->
                   <source src="static/videos/shopping/1.mp4"
                   type="video/mp4">
                 </video>
               </div>
+              <div class="item item-video12">
+                <video preload="auto"poster="" id="video12" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/2.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video13">
+                <video preload="auto"poster="" id="video13" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/3.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video14">
+                <video preload="auto"poster="" id="video14" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/4.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video15">
+                <video preload="auto"poster="" id="video15" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/5.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
-          <p style="text-align: left; max-width: 1024px; margin-left: 100px;">SkyReels-A3 also support lip movement alignment given reference videos and audio clips.</p>
+        </div>
+      </div>
+  </div>
+  <!-- <p align="center"> .</p> -->
+</section>
+
+
+
+
+
+<section class="hero is-small"></section>
+  <div class="hero-body">
+    <!-- <div class="container is-max-desktop"> -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column custom-width">
+        <h3 class="title is-5">MV</h3>
+          <div class="content has-text-justified" align="center">
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/shopping/1.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/edit/0.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video2">
+                <video preload="auto"poster="" id="video2" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/edit/2.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video3">
+                <video preload="auto"poster="" id="video3" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/edit/3.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video4">
+                <video preload="auto"poster="" id="video4" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/edit/4.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/edit/5.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   </div>
@@ -353,38 +468,152 @@
 
 
 
+
 <section class="hero is-small"></section>
   <div class="hero-body">
     <!-- <div class="container is-max-desktop"> -->
       <div class="columns is-centered has-text-centered">
         <div class="column custom-width">
-          <h3 class="title is-5">More Examples</h3>
+        <h3 class="title is-5">Camera Control</h3>
           <div class="content has-text-justified" align="center">
             <div id="results-carousel" class="carousel results-carousel" align="center">
-              <div class="item item-video10">
-                <video preload="auto"poster="" id="video10" autoplay controls muted loop height="480px">
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
                   <!-- Your video preload="auto"file here -->
-                  <source src="static/videos/qa/0.mp4"
+                  <source src="static/videos/camera/2.mp4"
                   type="video/mp4">
                 </video>
               </div>
-              <div class="item item-video11">
-                <video preload="auto"poster="" id="video11" autoplay controls muted loop height="480px">
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
                   <!-- Your video preload="auto"file here -->
-                  <source src="static/videos/shopping/1.mp4"
+                  <source src="static/videos/camera/3.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video2">
+                <video preload="auto"poster="" id="video2" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/camera/4.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video3">
+                <video preload="auto"poster="" id="video3" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/camera/5.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video4">
+                <video preload="auto"poster="" id="video4" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/camera/6.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/camera/7.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/camera/1.mp4"
                   type="video/mp4">
                 </video>
               </div>
             </div>
-
           </div>
-          <p style="text-align: left; max-width: 1024px; margin-left: 100px;">SkyReels-A3 can handle reference images of different objectives, sizes, and styles, and claim naturally consistent video results.</p>
-    
         </div>
       </div>
   </div>
-  <!-- <p align="center"> .</p> -->
+  <!-- <p align="center">Qualitative comparison of customized video generation with both subjects and motions. <br>Without guidance from additional videos, our method significantly outperforms in terms of concept combination.</p> -->
 </section>
+
+
+
+
+
+
+<section class="hero is-small"></section>
+  <div class="hero-body">
+    <!-- <div class="container is-max-desktop"> -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column custom-width">
+        <h3 class="title is-5">Multiple Styles and Subjects</h3>
+          <div class="content has-text-justified" align="center">
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/1.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/2.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video2">
+                <video preload="auto"poster="" id="video2" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/3.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video3">
+                <video preload="auto"poster="" id="video3" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/4.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video4">
+                <video preload="auto"poster="" id="video4" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/5.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/6.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/7.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video1">
+                <video preload="auto"poster="" id="video1" autoplay controls muted loop width="480px">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/style/8.mp4"
+                  type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- <p align="center">Qualitative comparison of customized video generation with both subjects and motions. <br>Without guidance from additional videos, our method significantly outperforms in terms of concept combination.</p> -->
+</section>
+
+
+
+
 
 
 
@@ -401,6 +630,10 @@
               <p>
               <a name="wanx" id="wanx"></a>
               [2] Wang A, Ai B, Wen B, et al. Wan: Open and Advanced Large-Scale Video Generative Models[J]. arXiv preprint arXiv:2503.20314, 2025.
+            </p>
+            <p>
+              <a name="wanx" id="wanx"></a>
+              [3] Fei Z, Jiang H, Qiu D, et al. SkyReels-Audio: Omni Audio-Conditioned Talking Portraits in Video Diffusion Transformers[J]. arXiv preprint arXiv:2506.00830, 2025.
             </p>
           </div>
         </div>
@@ -426,24 +659,6 @@
 </section> -->
 <!--End BibTex citation -->
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Statcounter tracking code -->
   
