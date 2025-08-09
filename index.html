@@ -7,6 +7,30 @@
     @import url('https://fonts.cdnfonts.com/css/caveat');
 </style> -->
 <head>
+    <style>
+    /* 添加自定义背景样式 */
+    .hero-with-bg {
+      background: url('./static/images/background.jpeg') center center;
+      background-size: cover;
+      position: relative;
+    }
+    
+    .hero-with-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+      z-index: 1;
+    }
+    
+    .hero-with-bg .hero-body {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
@@ -91,12 +115,13 @@
 
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-3 publication-title">SkyReels-A3: Towards Ultra-Long Audio-Conditioned Video Generation </h1>
+  <section class="hero hero-with-bg"> <!-- 添加自定义类 -->
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="color: white;">SkyReels-A3</h1>
+          <h1 class="title is-1 publication-title" style="color: white;">Towards Ultra-Long Audio-Conditioned Video Generation </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
                 <span class="author-block">
@@ -136,7 +161,7 @@
                       </a>
                   </span> -->
                   <span class="link-block">
-                    <a href="https://www.skyreels.ai/home/tools/lip-sync?refer=navbar"
+                    <a href="https://www.skyreels.ai"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fa fa-grin-tongue"></i>
